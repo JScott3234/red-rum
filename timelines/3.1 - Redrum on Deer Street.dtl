@@ -1,0 +1,15 @@
+[background arg="res://Assets/Backgrounds/IMG_1946.png" fade="0.0"]
+"0.1 - Noel Nowata": Holy shit...
+"0.1 - Noel Nowata": (The monkey’s paw definitely curled when I said nothing interesting happens in Regal City!)
+"1.1 - Sinbad Lee": This alreadys ain’ts pretty but his widow’s in the house. I’ve gots an autopsy reports on the guy. Here.
+[wait time="0.5"]
+Autopsy Report has been added to the briefcase.
+[wait time="0.2"]
+"0.1 - Noel Nowata": (Did it have to be so graphic…)
+"1.1 - Sinbad Lee": I’ms gonnas head in now. Let’s go.
+"0.1 - Noel Nowata": (Something else been bothering me though… Ever since we left the precinct I feel like I awoke from a daze…)
+"0.1 - Noel Nowata": (I should check my pocket watch again.)
+[wait time="1.0"]
+Press "X" to use the pocket watch.
+[wait time="999.0" hide_text="false"]
+if {} == "":

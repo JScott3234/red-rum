@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://crqrdpcvoe1o3"]
+
+[ext_resource type="Script" uid="uid://ckjp7c2rjg8sq" path="res://scripts/dream.gd" id="1_6ssay"]
+[ext_resource type="Texture2D" uid="uid://2e3h4o2nxre0" path="res://Assets/scuffed_lancer.png" id="1_akpjw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4inax"]
+size = Vector2(280, 268)
+
+[node name="TestClickable" type="Node2D" unique_id=823846104]
+script = ExtResource("1_6ssay")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=751590536]
+texture = ExtResource("1_akpjw")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=757300721]
+script = ExtResource("1_6ssay")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=199247236]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_4inax")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

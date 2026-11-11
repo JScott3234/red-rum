@@ -1,12 +1,10 @@
 [background arg="res://Assets/wallpaperflare.com_wallpaper.jpg" fade="0.0"]
 join "3.0 - Wood Chuck" center
-test: Hhehe, this is a test
-- yeag
+test: Stop right there, criminal scum! Nobody breaks the law on my watch! Pay the court of fine or serve your sentence!
+- Cooperate
 	test: yeah, you're chill
 	[wait time="1.5"]
-- nuh uh
-	test: why are you like this?
-	[text_input var="testResp"]
-	leave test
-	The lancer no longer cares for your response
-	[end_timeline]
+- Resist Arrest
+	test: Then pay with your blood!
+	[wait time="1.5"]
+[end_timeline]
