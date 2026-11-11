@@ -1,0 +1,24 @@
+[background arg="res://Assets/Backgrounds/360_F_444679273_dLQHT4Gn2cXtf76hHi0kHGpfiAU0cbSf.jpg" fade="0.0"]
+"0.0 - Leon Me": *sigh*... Nothing ever happens around here...
+"1.0 - Deen Basil": Murder...
+"0.0 - Leon Me": I’m trying to eat, Deen.
+"0.0 - Leon Me": (This is my coworker Deen Basil. Another detective at the Lager City Precinct.)
+"0.0 - Leon Me": (He looks a little... impossssing. But he’s generally helpful dude.)”
+"1.0 - Deen Basil": Haha! I didn’t means to interrupt your scrumptious PB&J, but there’s an actual murder ons Deer Road & Reed Street!
+"0.0 - Leon Me": Really?
+"1.0 - Deen Basil": Woah, mans! Ya sounds excited! Somebody's dead!
+"0.0 - Leon Me": Wha-... You sounded excited first!
+"0.0 - Leon Me": (Like I said before though, nothing fun ever happens...)
+"1.0 - Deen Basil": Only because I gets to brings my best buddy along! I’m nots happies someone’s dead!
+"1.0 - Deen Basil": I gots to refuel ya knows, so gets ready!
+"0.0 - Leon Me": (Alright! Gotta get ready!)
+"0.0 - Leon Me": Badge? Check! Wallet? Check!
+[wait time="1.0"]
+"0.0 - Leon Me": (...huh?)
+"0.0 - Leon Me": (My grandad’s pocket watch?! When did you get there?!)
+"0.0 - Leon Me": (This pocket watch has been passed down from my granddad to my dad and now to me)
+"0.0 - Leon Me": (It feels like destiny we’ve been reunited!)
+"0.0 - Leon Me": (Does it still work?)
+*click*
+[wait time="1.5"]
+jump 2.1 - At the precinct/

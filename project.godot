@@ -32,9 +32,15 @@ directories/dch_directory={
 "test": "res://characters/test.dch"
 }
 directories/dtl_directory={
-"clickTest": "res://timelines/test/clickTest.dtl",
-"dream": "res://timelines/dream.dtl",
-"testTimeline": "res://timelines/test/testTimeline.dtl",
+"0.1 - dream": "res://timelines/0.1 - dream.dtl",
+"1.0 - Leon Awakes": "res://timelines/1.0 - Leon Awakes.dtl",
+"2.0 - At the precinct": "res://timelines/2.0 - At the precinct.dtl",
+"2.1 - At the precinct": "res://timelines/2.1 - At the precinct.dtl",
+"3.0 - Murder on Reed Street": "res://timelines/3.0 - Murder on Reed Street.dtl",
+"3.1 - Redrum on Deer Street": "res://timelines/3.1 - Redrum on Deer Street.dtl",
+"4.0 - Inside the Manor": "res://timelines/4.0 - Inside the Manor.dtl",
+"test/clickTest": "res://timelines/test/clickTest.dtl",
+"test/testTimeline": "res://timelines/test/testTimeline.dtl",
 "timeline": "res://timeline.dtl"
 }
 layout/style_directory={}
