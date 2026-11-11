@@ -1,5 +1,5 @@
 [background arg="res://Assets/wallpaperflare.com_wallpaper.jpg" fade="0.0"]
-join wood_chuck center
+join "3.0 - Wood Chuck" center
 test: Hhehe, this is a test
 - yeag
 	test: yeah, you're chill
