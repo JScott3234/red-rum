@@ -19,7 +19,7 @@
 &"portraits": {
 "Scuffed Lancer": {
 "export_overrides": {
-"image": "\"res://Assets/scuffed_lancer.png\""
+"image": "\"res://Assets/deen_basssil.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

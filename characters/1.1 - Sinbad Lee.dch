@@ -19,7 +19,7 @@
 &"portraits": {
 "hims": {
 "export_overrides": {
-"image": "\"res://Assets/scuffed_lancer.png\""
+"image": "\"res://Assets/sin_badly.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
