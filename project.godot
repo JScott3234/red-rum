@@ -23,7 +23,8 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 directories/dch_directory={
 "Sinbad Lee": "res://characters/Sinbad Lee.dch",
-"test": "res://characters/test.dch"
+"test": "res://characters/test.dch",
+"wood_chuck": "res://characters/wood_chuck.dch"
 }
 directories/dtl_directory={
 "clickTest": "res://timelines/test/clickTest.dtl",
@@ -36,6 +37,7 @@ layout/default_style="Default"
 variables={
 "testResp": ""
 }
+glossary/default_case_sensitive=true
 
 [display]
 
