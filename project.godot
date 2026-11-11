@@ -22,14 +22,20 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
-"Sinbad Lee": "res://characters/Sinbad Lee.dch",
-"test": "res://characters/test.dch",
-"wood_chuck": "res://characters/wood_chuck.dch"
+"0.0 - Leon Me": "res://characters/0.0 - Leon Me.dch",
+"0.1 - Noel Nowata": "res://characters/0.1 - Noel Nowata.dch",
+"1.0 - Deen Basil": "res://characters/1.0 - Deen Basil.dch",
+"1.1 - Sinbad Lee": "res://characters/1.1 - Sinbad Lee.dch",
+"2.0 - Lily Chuck": "res://characters/2.0 - Lily Chuck.dch",
+"2.1 - Rose Wood": "res://characters/2.1 - Rose Wood.dch",
+"3.0 - Wood Chuck": "res://characters/3.0 - Wood Chuck.dch",
+"test": "res://characters/test.dch"
 }
 directories/dtl_directory={
 "clickTest": "res://timelines/test/clickTest.dtl",
 "dream": "res://timelines/dream.dtl",
-"testTimeline": "res://timelines/test/testTimeline.dtl"
+"testTimeline": "res://timelines/test/testTimeline.dtl",
+"timeline": "res://timeline.dtl"
 }
 layout/style_directory={}
 layout/style_list=[]
