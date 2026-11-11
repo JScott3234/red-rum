@@ -1,0 +1,18 @@
+[background arg="res://Assets/Backgrounds/moor gnivil.png" fade="0.0"]
+"0.1 - Noel Nowata": I should try to get some information out of Mrs. Wood if I can.
+join "2.1 - Rose Wood" center
+- When did you last see your husband alive?
+"0.1 - Noel Nowata": When did you last see your husband alive?
+"2.1 - Rose Wood": I’m sorry… I don’t feel comfortable sharing information right now.”
+"2.1 - Rose Wood": Could please ask the kind gentleman to leave?
+leave "2.1 - Rose Wood"
+join "1.1 - Sinbad Lee" center
+"1.1 - Sinbad Lee": Ma’am, I assures yous I means no harm
+"0.1 - Noel Nowata": This is serious. Please go outside!
+"1.1 - Sinbad Lee": Whatevas you says.
+leave "1.1 - Sinbad Lee"
+"0.1 - Noel Nowata": May I ask you when you last saw your husband?
+join "2.1 - Rose Wood" center
+"0.1 - Noel Nowata": I went to bed with him last night. He was right by my side! sobsary?
+"2.1 - Rose Wood": I went to bed with him last night. He was right by my side! (sobs)
+"2.1 - Rose Wood": Sometimes, he gets out of bed in the middle of the night. It’s not out of the ordinary for him to do that, but he always returned to bed.

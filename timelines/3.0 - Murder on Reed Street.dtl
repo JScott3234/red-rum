@@ -1,3 +1,5 @@
+[background arg="res://Assets/Backgrounds/murder scene.png" fade="0.0"]
 "0.0 - Leon Me": Well, the time is correct, but…
 "0.0 - Leon Me": (I get this weird feeling something’s… different now…)
 "0.0 - Leon Me": Regardless, I’ve got to get inside. I can’t keep Deen and the widow waiting.
+jump 4.0 - Chuck Residence/

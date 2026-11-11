@@ -1,0 +1,21 @@
+[background arg="res://Assets/Backgrounds/living room.png" fade="0.0"]
+join "1.0 - Deen Basil" center
+"0.0 - Leon Me": (I’m not exactly good at this. I mean, what do I even say? All I could do was talk to Deen)
+"0.0 - Leon Me": What have you got so far?
+"1.0 - Deen Basil": Onlys that hers name's Lily Chuck.
+leave "1.0 - Deen Basil"
+join "2.0 - Lily Chuck" center
+"2.0 - Lily Chuck": Oh lord have mercy, why was he taken from me in that matter?! sobs
+"0.0 - Leon Me": I’m not sure where to even start… I might as well try talking to her.
+- When did you last see your husband alive?
+"0.0 - Leon Me": When did you last see your husband alive?
+"2.0 - Lily Chuck": I’m sorry… I don’t feel comfortable sharing information right now…
+"2.0 - Lily Chuck": It’s not a dig at you gentleman, I would just feel more comfortable with a lady officer in the room.
+"0.0 - Leon Me": (That’s not an unusual request. Usually, I try to convince the requestor that I mean no harm, but this is a different situation with a grieving widow.)
+"0.0 - Leon Me": Well, I would certainly like to grant that request. It might take some time to get someone down here though.
+"0.0 - Leon Me": (I really wish I could get some information out of her now though…)
+leave "2.0 - Lily Chuck"
+The air feels like it's starting to change... Leon opens his pocket watch.
+*click!*
+[wait time="1.0"]
+jump 4.1 - Wood Residence/

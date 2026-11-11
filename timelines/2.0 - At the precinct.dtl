@@ -1,5 +1,6 @@
 [background arg="res://Assets/Backgrounds/360_F_444679273_dLQHT4Gn2cXtf76hHi0kHGpfiAU0cbSf.jpg" fade="0.0"]
 "0.0 - Leon Me": *sigh*... Nothing ever happens around here...
+join "1.0 - Deen Basil" center
 "1.0 - Deen Basil": Murder...
 "0.0 - Leon Me": I’m trying to eat, Deen.
 "0.0 - Leon Me": (This is my coworker Deen Basil. Another detective at the Lager City Precinct.)
@@ -11,6 +12,7 @@
 "0.0 - Leon Me": (Like I said before though, nothing fun ever happens...)
 "1.0 - Deen Basil": Only because I gets to brings my best buddy along! I’m nots happies someone’s dead!
 "1.0 - Deen Basil": I gots to refuel ya knows, so gets ready!
+leave "1.0 - Deen Basil"
 "0.0 - Leon Me": (Alright! Gotta get ready!)
 "0.0 - Leon Me": Badge? Check! Wallet? Check!
 [wait time="1.0"]
@@ -19,6 +21,6 @@
 "0.0 - Leon Me": (This pocket watch has been passed down from my granddad to my dad and now to me)
 "0.0 - Leon Me": (It feels like destiny we’ve been reunited!)
 "0.0 - Leon Me": (Does it still work?)
-*click*
+*click!*
 [wait time="1.5"]
 jump 2.1 - At the precinct/
