@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bf7djlxkx33t6"]
+
+[ext_resource type="PackedScene" uid="uid://2m2hwyp557cl" path="res://test/test_clickable.tscn" id="1_8uhmp"]
+[ext_resource type="Script" uid="uid://cj36hfu2tbfec" path="res://scripts/level_sys.gd" id="1_vwpas"]
+
+[node name="PcTest" type="Node2D" unique_id=1800439214 node_paths=PackedStringArray("real", "reverse")]
+script = ExtResource("1_vwpas")
+real = NodePath("real_world")
+reverse = NodePath("reverse_world")
+
+[node name="real_world" type="Node2D" parent="." unique_id=1433852692]
+
+[node name="TestClickable" parent="real_world" unique_id=823846104 instance=ExtResource("1_8uhmp")]
+position = Vector2(232, 200)
+
+[node name="TestClickable2" parent="real_world" unique_id=347358193 instance=ExtResource("1_8uhmp")]
+position = Vector2(828, 213)
+
+[node name="TestClickable3" parent="real_world" unique_id=1456547152 instance=ExtResource("1_8uhmp")]
+position = Vector2(445, 401)
+
+[node name="reverse_world" type="Node2D" parent="." unique_id=173194884]
+visible = false
+
+[node name="TestClickable4" parent="reverse_world" unique_id=1008083019 instance=ExtResource("1_8uhmp")]
+position = Vector2(523, 78)
+
+[node name="TestClickable5" parent="reverse_world" unique_id=1437491888 instance=ExtResource("1_8uhmp")]
+position = Vector2(921, 405)
+
+[node name="TestClickable6" parent="reverse_world" unique_id=549395139 instance=ExtResource("1_8uhmp")]
+position = Vector2(253, 423)

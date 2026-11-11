@@ -1,0 +1,12 @@
+[background arg="res://Assets/wallpaperflare.com_wallpaper.jpg" fade="0.0"]
+join test center
+test: Hhehe, this is a test
+- yeag
+	test: yeah, you're chill
+	[wait time="1.5"]
+- nuh uh
+	test: why are you like this?
+	[text_input var="testResp"]
+	leave test
+	The lancer no longer cares for your response
+	[end_timeline]
