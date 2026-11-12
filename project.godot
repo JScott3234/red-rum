@@ -41,7 +41,7 @@ directories/dtl_directory={
 "4.0 - Chuck Residence": "res://timelines/4.0 - Chuck Residence.dtl",
 "4.1 - Wood Residence": "res://timelines/4.1 - Wood Residence.dtl",
 "clickTest": "res://timelines/test/clickTest.dtl",
-"testTimeline": "res://timelines/test/testTimeline.dtl",
+"test/testTimeline": "res://timelines/test/testTimeline.dtl",
 "timeline": "res://timeline.dtl"
 }
 layout/style_directory={}

@@ -10,3 +10,5 @@ script = ExtResource("1_ig7tw")
 stream = ExtResource("2_0xm2m")
 autoplay = true
 parameters/looping = true
+
+[connection signal="property_list_changed" from="." to="." method="_on_property_list_changed"]

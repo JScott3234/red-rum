@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://bf7djlxkx33t6"]
 
-[ext_resource type="PackedScene" uid="uid://2m2hwyp557cl" path="res://test/clickable.tscn" id="1_8uhmp"]
 [ext_resource type="Script" uid="uid://cj36hfu2tbfec" path="res://scripts/level_sys.gd" id="1_vwpas"]
 [ext_resource type="AudioStream" uid="uid://bj2be2sq7psy4" path="res://audio/snap_switch.wav" id="2_g2yhr"]
+[ext_resource type="Texture2D" uid="uid://8o1r46nvrxfv" path="res://Assets/IMG_1951.png" id="3_2uh41"]
+[ext_resource type="PackedScene" uid="uid://drs5n5ued11t5" path="res://test/statue.tscn" id="3_xlhki"]
+[ext_resource type="PackedScene" uid="uid://b2mmm4kbnuvk5" path="res://test/knife.tscn" id="4_nxpb6"]
 [ext_resource type="AudioStream" uid="uid://tj511wo61gwc" path="res://audio/Noir_loop.ogg" id="4_xlhki"]
 [ext_resource type="AudioStream" uid="uid://bnb2xc23uj8en" path="res://audio/Noir_bizarro_loop.ogg" id="5_nxpb6"]
+[ext_resource type="Texture2D" uid="uid://52ex2iiqdnvg" path="res://Assets/negative_room.png" id="7_353g0"]
 
 [node name="point_and_click" type="Node2D" unique_id=1800439214 node_paths=PackedStringArray("real", "reverse", "snap")]
 script = ExtResource("1_vwpas")
@@ -17,11 +20,13 @@ stream = ExtResource("2_g2yhr")
 
 [node name="real_world" type="Node2D" parent="." unique_id=1433852692]
 
-[node name="TestClickable" parent="real_world" unique_id=823846104 instance=ExtResource("1_8uhmp")]
-position = Vector2(266, 150)
+[node name="Img1951" type="Sprite2D" parent="real_world" unique_id=1935557848]
+position = Vector2(644, 310.00003)
+scale = Vector2(1.05, 1.05)
+texture = ExtResource("3_2uh41")
 
-[node name="TestClickable2" parent="real_world" unique_id=137862327 instance=ExtResource("1_8uhmp")]
-position = Vector2(784, 405)
+[node name="TestClickable" parent="real_world" unique_id=823846104 instance=ExtResource("3_xlhki")]
+position = Vector2(257.99994, 153.99998)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="real_world" unique_id=140138897]
 stream = ExtResource("4_xlhki")
@@ -31,13 +36,16 @@ parameters/looping = true
 [node name="reverse_world" type="Node2D" parent="." unique_id=173194884]
 visible = false
 
-[node name="TestClickable" parent="reverse_world" unique_id=691757805 instance=ExtResource("1_8uhmp")]
-position = Vector2(819, 129)
-
-[node name="TestClickable2" parent="reverse_world" unique_id=509353065 instance=ExtResource("1_8uhmp")]
-position = Vector2(248, 399)
-
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="reverse_world" unique_id=1985858207]
 stream = ExtResource("5_nxpb6")
 autoplay = true
 parameters/looping = true
+
+[node name="NegativeRoom" type="Sprite2D" parent="reverse_world" unique_id=1150951831]
+position = Vector2(630, 308)
+texture = ExtResource("7_353g0")
+
+[node name="TestClickable3" parent="reverse_world" unique_id=1446326695 instance=ExtResource("4_nxpb6")]
+position = Vector2(682, 590)
+rotation = 0.95818573
+scale = Vector2(0.295, 0.295)

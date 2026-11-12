@@ -11,5 +11,7 @@ func _input(event: InputEvent):
 		return
 
 	if event is InputEventKey and event.keycode == KEY_SPACE and event.pressed:
-		Dialogic.start('dream')
+		Dialogic.start('0.1 - dream')
 		get_viewport().set_input_as_handled()
+		await(Dialogic.timeline_ended)
+		get_tree().change_scene_to_file("res://test/pc_test.tscn")
