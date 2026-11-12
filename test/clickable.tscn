@@ -13,7 +13,6 @@ script = ExtResource("1_6ssay")
 click_sound = ExtResource("3_v8sky")
 hover_sound = ExtResource("3_cf7s8")
 sound_player = NodePath("AudioStreamPlayer")
-dialogue_name = "clickTest"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=751590536]
 texture = ExtResource("1_akpjw")

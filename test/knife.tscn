@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b2mmm4kbnuvk5"]
+
+[ext_resource type="Script" uid="uid://drdlufh8krsk1" path="res://scripts/clickable.gd" id="1_u0ygq"]
+[ext_resource type="AudioStream" uid="uid://b18kqo7286s72" path="res://audio/click.ogg" id="2_ghbhx"]
+[ext_resource type="AudioStream" uid="uid://cvk5gwnf5uuhe" path="res://audio/hover.ogg" id="3_rx73a"]
+[ext_resource type="Texture2D" uid="uid://qn6su58fbtx4" path="res://Assets/knife.png" id="4_u0ygq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4inax"]
+size = Vector2(280, 369)
+
+[node name="TestClickable" type="Node2D" unique_id=823846104 node_paths=PackedStringArray("sound_player")]
+script = ExtResource("1_u0ygq")
+click_sound = ExtResource("2_ghbhx")
+hover_sound = ExtResource("3_rx73a")
+sound_player = NodePath("AudioStreamPlayer")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=751590536]
+texture = ExtResource("4_u0ygq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=757300721]
+script = ExtResource("1_u0ygq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=199247236]
+position = Vector2(0, 9.5)
+shape = SubResource("RectangleShape2D_4inax")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=517316507]
+stream = ExtResource("2_ghbhx")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

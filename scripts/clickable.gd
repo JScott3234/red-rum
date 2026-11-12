@@ -6,7 +6,6 @@ extends Node
 @export var hover_sound: AudioStream
 @export var sound_player: AudioStreamPlayer
 @export var next_scene: PackedScene
-@export var dialogue_name: String
 
 func _ready() -> void:
 	pass # Replace with function body.
@@ -16,7 +15,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		#print("Object clicked!")
 		sound_player.stream = click_sound
 		sound_player.play()
-		Dialogic.start(dialogue_name)
+		Dialogic.start('clickTest')
 		if(disappear):
 			self.visible = false
 		if(scene_change):

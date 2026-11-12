@@ -39,7 +39,7 @@ directories/dtl_directory={
 "3.0 - Murder on Reed Street": "res://timelines/3.0 - Murder on Reed Street.dtl",
 "3.1 - Redrum on Deer Street": "res://timelines/3.1 - Redrum on Deer Street.dtl",
 "4.0 - Inside the Manor": "res://timelines/4.0 - Inside the Manor.dtl",
-"test/clickTest": "res://timelines/test/clickTest.dtl",
+"clickTest": "res://timelines/test/clickTest.dtl",
 "test/testTimeline": "res://timelines/test/testTimeline.dtl",
 "timeline": "res://timeline.dtl"
 }
