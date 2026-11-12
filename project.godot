@@ -38,9 +38,10 @@ directories/dtl_directory={
 "2.1 - At the precinct": "res://timelines/2.1 - At the precinct.dtl",
 "3.0 - Murder on Reed Street": "res://timelines/3.0 - Murder on Reed Street.dtl",
 "3.1 - Redrum on Deer Street": "res://timelines/3.1 - Redrum on Deer Street.dtl",
-"4.0 - Inside the Manor": "res://timelines/4.0 - Inside the Manor.dtl",
+"4.0 - Chuck Residence": "res://timelines/4.0 - Chuck Residence.dtl",
+"4.1 - Wood Residence": "res://timelines/4.1 - Wood Residence.dtl",
 "clickTest": "res://timelines/test/clickTest.dtl",
-"test/testTimeline": "res://timelines/test/testTimeline.dtl",
+"testTimeline": "res://timelines/test/testTimeline.dtl",
 "timeline": "res://timeline.dtl"
 }
 layout/style_directory={}
@@ -50,6 +51,38 @@ variables={
 "testResp": ""
 }
 glossary/default_case_sensitive=true
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
 
 [display]
 

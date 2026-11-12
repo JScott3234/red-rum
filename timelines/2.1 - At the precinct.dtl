@@ -2,7 +2,8 @@
 "0.1 - Noel Nowata": (!?)
 [wait time="1.0" hide_text="false"]
 "1.1 - Sinbad Lee": ….o….ello... HELLO? Earth to Noel!
+join "1.1 - Sinbad Lee" center
 "0.1 - Noel Nowata": Ah! Sorry. I got lost in thought and you startled me!
-"1.1 - Sinbad Lee": The redrum ain’ts gonnas solve itself ya knows!
 "1.1 - Sinbad Lee": The redrum ain’ts gonnas solve itself ya knows! Come ons! We gots to get to Reed Rd. And Deer St.!
-[end_timeline]
+leave "1.1 - Sinbad Lee"
+jump 3.1 - Redrum on Deer Street/
