@@ -7,13 +7,21 @@
 [ext_resource type="PackedScene" uid="uid://b2mmm4kbnuvk5" path="res://test/knife.tscn" id="4_nxpb6"]
 [ext_resource type="AudioStream" uid="uid://tj511wo61gwc" path="res://audio/Noir_loop.ogg" id="4_xlhki"]
 [ext_resource type="AudioStream" uid="uid://bnb2xc23uj8en" path="res://audio/Noir_bizarro_loop.ogg" id="5_nxpb6"]
+[ext_resource type="Resource" uid="uid://b0m08hrndxxmt" path="res://timelines/statue.dtl" id="5_y3uwm"]
 [ext_resource type="Texture2D" uid="uid://52ex2iiqdnvg" path="res://Assets/negative_room.png" id="7_353g0"]
+[ext_resource type="Resource" uid="uid://vu048im11d8p" path="res://timelines/knife.dtl" id="10_wcggi"]
 
-[node name="point_and_click" type="Node2D" unique_id=1800439214 node_paths=PackedStringArray("real", "reverse", "snap")]
+[sub_resource type="LabelSettings" id="LabelSettings_y3uwm"]
+font_size = 76
+outline_size = 19
+outline_color = Color(0, 0, 0, 1)
+
+[node name="point_and_click" type="Node2D" unique_id=1800439214 node_paths=PackedStringArray("real", "reverse", "snap", "menu")]
 script = ExtResource("1_vwpas")
 real = NodePath("real_world")
 reverse = NodePath("reverse_world")
 snap = NodePath("AudioStreamPlayer3")
+menu = NodePath("Menu")
 
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." unique_id=974354138]
 stream = ExtResource("2_g2yhr")
@@ -27,6 +35,7 @@ texture = ExtResource("3_2uh41")
 
 [node name="TestClickable" parent="real_world" unique_id=823846104 instance=ExtResource("3_xlhki")]
 position = Vector2(257.99994, 153.99998)
+dialogue = ExtResource("5_y3uwm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="real_world" unique_id=140138897]
 stream = ExtResource("4_xlhki")
@@ -49,3 +58,53 @@ texture = ExtResource("7_353g0")
 position = Vector2(682, 590)
 rotation = 0.95818573
 scale = Vector2(0.295, 0.295)
+dialogue = ExtResource("10_wcggi")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=35350169]
+position = Vector2(613, 382)
+zoom = Vector2(0.615, 0.615)
+
+[node name="Menu" type="Node2D" parent="." unique_id=133744953]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Menu" unique_id=1277989383]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(615.00006, 344)
+scale = Vector2(0.43798828, 0.37353516)
+texture = ExtResource("3_2uh41")
+
+[node name="Label" type="Label" parent="Menu" unique_id=394915199]
+custom_minimum_size = Vector2(0.145, 0.17)
+offset_left = 225.0
+offset_top = 23.0
+offset_right = 1028.0
+offset_bottom = 236.0
+text = "Thank you 
+for playing our Demo!"
+label_settings = SubResource("LabelSettings_y3uwm")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Menu" unique_id=1738246103]
+offset_left = 566.0
+offset_top = 340.0
+offset_right = 664.0
+offset_bottom = 371.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(3.59, 3.59)
+offset_transform_visual_only = false
+text = "Restart"
+
+[node name="Button2" type="Button" parent="Menu" unique_id=1031109913]
+offset_left = 567.0
+offset_top = 541.0
+offset_right = 659.0
+offset_bottom = 572.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(3.59, 3.59)
+offset_transform_visual_only = false
+text = "Quit Game"
+
+[connection signal="pressed" from="Menu/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/Button2" to="." method="_on_button_2_pressed"]

@@ -1,10 +1,10 @@
 [background arg="res://Assets/Backgrounds/living room.png" fade="0.0"]
-join "1.0 - Deen Basil" center
+join "1.0 - Deen Basil" right
 "0.0 - Leon Me": (I’m not exactly good at this. I mean, what do I even say? All I could do was talk to Deen)
 "0.0 - Leon Me": What have you got so far?
 "1.0 - Deen Basil": Onlys that hers name's Lily Chuck.
 leave "1.0 - Deen Basil"
-join "2.0 - Lily Chuck" center
+join "2.0 - Lily Chuck" left
 "2.0 - Lily Chuck": Oh lord have mercy, why was he taken from me in that matter?! sobs
 "0.0 - Leon Me": I’m not sure where to even start… I might as well try talking to her.
 - When did you last see your husband alive?
@@ -16,6 +16,7 @@ join "2.0 - Lily Chuck" center
 "0.0 - Leon Me": (I really wish I could get some information out of her now though…)
 leave "2.0 - Lily Chuck"
 The air feels like it's starting to change... Leon opens his pocket watch.
+audio "res://audio/snap_switch.wav"
 *click!*
 [wait time="1.0"]
 jump 4.1 - Wood Residence/

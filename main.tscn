@@ -2,13 +2,79 @@
 
 [ext_resource type="Script" uid="uid://ckjp7c2rjg8sq" path="res://scripts/dream.gd" id="1_ig7tw"]
 [ext_resource type="AudioStream" uid="uid://tj511wo61gwc" path="res://audio/Noir_loop.ogg" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://8o1r46nvrxfv" path="res://Assets/IMG_1951.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://d1p2s8it06i76" path="res://Assets/IMG_1937.png" id="3_h2yge"]
 
-[node name="Node2D" type="Node2D" unique_id=1837527150]
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font_size = 28
+outline_size = 19
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4inax"]
+font_size = 76
+outline_size = 19
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1837527150 node_paths=PackedStringArray("menu", "bkgd")]
 script = ExtResource("1_ig7tw")
+menu = NodePath("MenuUI")
+bkgd = NodePath("Img1951")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=79128223]
 stream = ExtResource("2_0xm2m")
 autoplay = true
 parameters/looping = true
 
+[node name="Img1951" type="Sprite2D" parent="." unique_id=1842696451]
+visible = false
+position = Vector2(574, 329)
+texture = ExtResource("3_1bvp3")
+
+[node name="MenuUI" type="Node2D" parent="." unique_id=2046750606]
+
+[node name="Img1937" type="Sprite2D" parent="MenuUI" unique_id=1738568611]
+position = Vector2(568, 351)
+texture = ExtResource("3_h2yge")
+
+[node name="Label2" type="Label" parent="MenuUI" unique_id=1294676300]
+offset_left = 21.0
+offset_top = 530.0
+offset_right = 514.0
+offset_bottom = 682.0
+text = "By Cariana, Dillon, Jase, and Timothy"
+label_settings = SubResource("LabelSettings_h2yge")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="MenuUI" unique_id=810608761]
+offset_left = 225.0
+offset_top = 19.0
+offset_right = 568.0
+offset_bottom = 171.0
+text = "Red Rum"
+label_settings = SubResource("LabelSettings_4inax")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="MenuUI" unique_id=1263688362]
+offset_left = 898.0
+offset_top = 179.0
+offset_right = 1103.0
+offset_bottom = 228.0
+offset_transform_enabled = true
+text = "Start"
+
+[node name="Button2" type="Button" parent="MenuUI" unique_id=999793773]
+offset_left = 894.0
+offset_top = 285.0
+offset_right = 1099.0
+offset_bottom = 334.0
+offset_transform_enabled = true
+text = "Exit"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=26149531]
+position = Vector2(578, 324)
+
 [connection signal="property_list_changed" from="." to="." method="_on_property_list_changed"]
+[connection signal="pressed" from="MenuUI/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MenuUI/Button2" to="." method="_on_button_2_pressed"]

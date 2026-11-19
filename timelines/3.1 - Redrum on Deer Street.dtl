@@ -1,7 +1,7 @@
 [background arg="res://Assets/Backgrounds/enecs redrum.png" fade="0.0"]
 "0.1 - Noel Nowata": Holy shit...
 "0.1 - Noel Nowata": (The monkey’s paw definitely curled when I said nothing interesting happens in Regal City!)
-join "1.1 - Sinbad Lee" center
+join "1.1 - Sinbad Lee" rightmost
 "1.1 - Sinbad Lee": This alreadys ain’ts pretty but his widow’s in the house. I’ve gots an autopsy reports on the guy. Here.
 [wait time="0.5"]
 Autopsy Report has been added to the briefcase.

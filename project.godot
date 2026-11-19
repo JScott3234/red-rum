@@ -41,6 +41,8 @@ directories/dtl_directory={
 "4.0 - Chuck Residence": "res://timelines/4.0 - Chuck Residence.dtl",
 "4.1 - Wood Residence": "res://timelines/4.1 - Wood Residence.dtl",
 "clickTest": "res://timelines/test/clickTest.dtl",
+"knife": "res://timelines/knife.dtl",
+"statue": "res://timelines/statue.dtl",
 "test/testTimeline": "res://timelines/test/testTimeline.dtl",
 "timeline": "res://timeline.dtl"
 }
@@ -114,3 +116,4 @@ dialogic_default_action={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
